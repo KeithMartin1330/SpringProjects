@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		<property name="url" value="jdbc:sqlserver://FEN-LAP-435\\MSSQLSERVER2016:65502;databaseName=Java_Work;user=sa;password=ergo.1234" />
+		<property name="username" value="sa" />
+		<property name="password" value="ergo.1234" />
+
+		
+	</bean>
+
+</beans>
